@@ -5,6 +5,12 @@ public class EmpApp {
         Employee[] employee = new Employee[10];
 
         Employee e1 = new Employee("홍길동", "01053427161");
+        e1.setEmpNo(9);
+        e1.setPosition("부장");
+        e1.setSalary(500);
+        e1.setAccount("10102422121");
+        e1.setDept("인사팀");
+
         Employee e2 = new Employee("임꺽정", "0105347161", "디자인팀");
         Employee e3 = new Employee("김시루", "0105734161", "디자인팀", 5, 500000, "1311554242", "과장");
         Employee e4 = new Employee("김뚜이", "01057377161", "디자인팀", 6, 5000000, "1311554242", "이사");
@@ -30,5 +36,20 @@ public class EmpApp {
             employee[i].printInfo();
         }
 
+        int totalYearSalary = 0;
+        totalYearSalary = totalYearSalary + employee[0].getSalary()*12;
+        totalYearSalary = totalYearSalary + employee[1].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[2].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[3].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[4].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[5].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[6].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[7].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[8].calcYearSalary();
+        totalYearSalary = totalYearSalary + employee[9].calcYearSalary();
+
+
+
+        System.out.println("전체연봉은 "+totalYearSalary);
     }
 }

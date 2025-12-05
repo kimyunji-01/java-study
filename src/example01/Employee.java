@@ -121,5 +121,11 @@ public class Employee {
         return empNo;
     }
 
+    //연봉계산 메서드
+
+    public int calcYearSalary(){
+        return salary*12;
+
+    }
 
 }
