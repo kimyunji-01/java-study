@@ -10,6 +10,8 @@ public class People {
     this.height= height;
     this.weight= weight;
 
+    // => 상태 초기화
+
     }
     //상태변경
     public void 밥먹기(){

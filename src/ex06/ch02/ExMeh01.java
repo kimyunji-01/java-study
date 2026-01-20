@@ -13,7 +13,7 @@ class Morning extends Car{
     }
 }
 
-class Sonata extends Car{
+   class Sonata extends Car{
     void run(){
         System.out.println("소나타 달린다");
     }

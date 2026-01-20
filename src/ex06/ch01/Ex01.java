@@ -1,27 +1,30 @@
 package ex06.ch01;
 
-class 재판관{
+class 재판관 {
 
 }
 
-class 진행자{
+class 진행자 {
 
 }
 
-class 죄인{
-
-}
-class 왕비 extends 재판관{
+class 죄인 {
 
 }
 
-class 왕 extends 재판관{
+class 왕비 extends 재판관 {
 
 }
-class 토끼 extends 진행자{
+
+class 왕 extends 재판관 {
 
 }
-class 모자장수 extends 죄인{
+
+class 토끼 extends 진행자 {
+
+}
+
+class 모자장수 extends 죄인 {
 
 }
 
